@@ -1,6 +1,6 @@
 'use client';
 
-export const API_BASE = 'http://localhost:5000'; // Temporarily hardcoded for testing
+export const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 export const STORE_URL = process.env.NEXT_PUBLIC_STORE_URL || 'http://localhost:3000';
 const DEFAULT_TIMEOUT_MS = 25000;
 
